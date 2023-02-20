@@ -237,6 +237,19 @@ img {
 	}
 }
 
+.movingImg {
+	animation: 2s infinite alternate movingAn;
+
+	@keyframes movingAn {
+		from {
+			transform: translate(15px, 10px);
+		}
+
+		to {
+			transform: translate(0px, 0);
+		}
+	}
+}
 
 .about {
 	background: url(../img/BG.png);
