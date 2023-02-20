@@ -487,11 +487,11 @@
     .circle {
         &__circles {
             margin-left: 0;
-            margin: 0 auto;
+
 
             img {
-                margin-top: -15px;
                 width: 270px;
+                margin: -15px auto 0;
             }
         }
     }
