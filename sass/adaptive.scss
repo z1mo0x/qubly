@@ -281,6 +281,11 @@
     .header {
         transition: all .5s;
 
+        &__burger {
+            display: block !important;
+
+        }
+
         &__list {
             position: fixed;
             display: flex !important;
@@ -325,7 +330,7 @@
             a {
                 transition: all 1s;
                 color: white;
-                font-size: 25px;
+                font-size: 28px;
                 padding: 10px;
                 background: rgba(255, 255, 255, .3);
             }
