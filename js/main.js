@@ -8,7 +8,7 @@ const burger = document.querySelector('.header__burger');
 const list = document.querySelector('.header__list');
 const body = document.body;
 const html = document.documentElement;
-
+const anchors = document.querySelectorAll('a[href*="#"]');
 const textCompanies = [
     '"Нихуевый так то сервис, я даже думаю что его делал реально такой же гений как и я"',
     '"What I love about Qubly is the easy way we can collaborate even if there is a lot of people involved in the process"',
@@ -67,4 +67,11 @@ burger.addEventListener('click', () => {
     list.classList.toggle('active_list');
 });
 
-
+anchors.forEach((e) => {
+    e.addEventListener('click', (element) => {
+        burger.classList.toggle('active_burger');
+        list.classList.toggle('active_list');
+        html.classList.toggle('off_scroll');
+        body.classList.toggle('off_scroll');
+    });
+});
