@@ -265,11 +265,17 @@
 
     .notif {
         font-size: 12px;
+
+        &::before {
+            font-size: 5px;
+            line-height: 50%;
+            width: 10px;
+            height: 10px;
+        }
     }
 
-    .top__banner {
-        background-image: url('/img/') !important;
-        background-color: #fff;
+    section.top__banner {
+        background-image: none !important;
     }
 
     .header {
@@ -387,8 +393,12 @@
 
     }
 
+    .why {
+        padding-top: 150px;
+    }
 
     .about {
+
         &__button {
             &:first-child {
                 padding: 6px 12px;
@@ -486,22 +496,24 @@
 
     .circle {
         &__circles {
-            margin-left: 0;
-
+            position: relative;
 
             img {
-                width: 270px;
-                margin: -15px auto 0;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 350px;
             }
         }
     }
 
 
     .reviews {
-        padding-top: 100px;
+        padding-top: 120px;
 
         &__text {
             font-size: 14px;
+            min-height: 75px;
         }
 
         &__img {
