@@ -22,7 +22,7 @@ const nameFounders = {
 
     'Artem Lomov': 'Typical Coder',
     'Dmitry Podzigun': 'Professional DataBase',
-    'Anastasya Tinkova': 'Rab "Restretch"'
+    'Anastasya Tinkova': 'Just friend'
 }
 const imgFounders = [
     'img/andrey.jfif',
