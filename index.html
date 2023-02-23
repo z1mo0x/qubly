@@ -1,402 +1,476 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
+    <title>Qubly</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
-  <meta charset="utf-8">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#722ED1" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#722ED1" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#722ED1" />
 
-  <title>Qubly</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      body {
+        opacity: 0;
+        overflow-x: hidden;
+      }
 
+      html {
+        background-color: #fff;
+      }
+    </style>
+  </head>
 
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#722ED1">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#722ED1">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#722ED1">
-
-  <style>
-    body {
-      opacity: 0;
-      overflow-x: hidden;
-    }
-
-    html {
-      background-color: #fff;
-    }
-  </style>
-
-</head>
-
-<body>
-  <section class="top__banner">
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col d-flex justify-content-between offset-lg-1 offset-md-0"><img src="img/Logo.svg" alt=""
-              class="header__logo">
-            <div class="header__burger">
-              <span></span>
-              <span></span>
-              <span></span>
+  <body>
+    <section class="top__banner">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col d-flex justify-content-between offset-lg-1 offset-md-0"
+            >
+              <img src="img/Logo.svg" alt="" class="header__logo" />
+              <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="header__list">
+                <li>
+                  <a href="#">About</a>
+                  <ul class="header__submenu">
+                    <li><a href="">Certification</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Opportunities</a></li>
+                    <li><a href=""> Customers</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#signup">Login</a></li>
+                <a href="#signup" class="header__button"
+                  ><button>Start free trial</button></a
+                >
+              </ul>
             </div>
-            <ul class="header__list">
-              <li>
-                <a href="#">About</a>
-                <ul class="header__submenu">
-                  <li><a href="">Certification</a> </li>
-                  <li><a href="">Team</a> </li>
-                  <li><a href="">Opportunities</a> </li>
-                  <li><a href=""> Customers</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#signup">Login</a></li>
-              <a href="#signup" class="header__button"><button>Start free trial</button></a>
-            </ul>
-
           </div>
         </div>
-      </div>
-    </header>
-    <section class="about">
+      </header>
+      <section class="about">
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div
+              class="col-lg-6 offset-lg-1 offset-md-0 d-flex flex-column flex-column align-content-around justify-content-around wow slideInLeft col-sm-12"
+            >
+              <div class="notif">v3.1 released. <a href=""> Learn more</a></div>
+              <div class="about__title">Your data with real-time analytics</div>
+              <div class="about__descr">
+                Harness the potential of Big Data Analytics & Cloud Services and
+                become a data-driven organization with Needle tail
+              </div>
+              <div class="about__buttons">
+                <a href="#signup">
+                  <button class="about__button">Start free trial</button></a
+                >
+                <button class="about__button">Learn more</button>
+              </div>
+            </div>
+            <div
+              class="col col-md-5 col-sm-8 col-10 m-auto order-1 wow slideInRight"
+            >
+              <img src="img/about.png" class="movingImg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="why">
       <div class="container">
-        <div class="row d-flex justify-content-between">
+        <div class="notif m-auto mb-4 wow flipInX" data-wow-offset="200">
+          Why Qubly
+        </div>
+        <div class="row">
           <div
-            class=" col-lg-6 offset-lg-1 offset-md-0 d-flex flex-column flex-column align-content-around justify-content-around wow slideInLeft col-sm-12">
-            <div class="notif">v3.1 released. <a href=""> Learn more</a></div>
-            <div class="about__title">Your data with real-time analytics</div>
-            <div class="about__descr">Harness the potential of Big Data Analytics & Cloud Services and
-              become a
-              data-driven organization with Needle tail</div>
-            <div class="about__buttons">
-              <a href="#signup"> <button class="about__button">Start free trial</button></a>
-              <button class="about__button">Learn more</button>
+            class="col-12 col-lg-8 m-auto offset-lg-0 offset-md-2 offset-sm-0 offset-0 wow flipInX"
+            data-wow-offset="200"
+          >
+            <div
+              class="why__one one text-center wow flipInX"
+              data-wow-offset="200"
+            >
+              <div class="one__title">
+                Get actionable insights from Big Data in 3 steps
+              </div>
+              <div class="one__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </div>
             </div>
           </div>
-          <div class="col col-md-5 col-sm-8 col-10 m-auto order-1 wow slideInRight">
-            <img src="img/about.png" class="movingImg" alt="">
+        </div>
+        <div
+          class="row d-md-flex align-items-md-center justify-content-md-center"
+        >
+          <div
+            class="col-lg-4 col-md-6 d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center"
+          >
+            <div class="why__three three wow flip" data-wow-offset="200">
+              <img src="img/chart-bar-33.png" alt="" />
+              <div class="three__title">Valuable business insights</div>
+              <div class="three__text">
+                Collect processed & cleansed data that is ready to be analyzed
+                to gather valuable business insights.
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center wow flipInY"
+            data-wow-offset="200"
+          >
+            <div class="why__three three">
+              <img src="img/mail.png" alt="" />
+              <div class="three__title">Powerful Algorithms</div>
+              <div class="three__text">
+                With the help of powerful algorithms, quality rules &
+                techniques, obtain simplified & enriched data.
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center wow flipInX"
+            data-wow-offset="200"
+          >
+            <div class="why__three three">
+              <img src="img/timeline.png" alt="" />
+              <div class="three__title">Data in real-time</div>
+              <div class="three__text">
+                Collect data in real-time from multiple channels and move it
+                into a data lake, in its original format.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </section>
-  <section class="why">
-    <div class="container">
-      <div class="notif m-auto mb-4 wow flipInX " data-wow-offset="200">Why Qubly</div>
-      <div class="row">
-        <div class="col-12 col-lg-8 m-auto offset-lg-0 offset-md-2 offset-sm-0 offset-0 wow flipInX "
-          data-wow-offset="200">
-          <div class="why__one one text-center wow flipInX " data-wow-offset="200">
-            <div class="one__title">
-              Get actionable insights from Big Data in 3 steps
-            </div>
-            <div class="one__text">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
-          </div>
-        </div>
-      </div>
-      <div class="row d-md-flex align-items-md-center justify-content-md-center">
-        <div
-          class="col-lg-4 col-md-6 d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center">
-          <div class="why__three three wow flip " data-wow-offset="200">
-            <img src="img/chart-bar-33.png" alt="">
-            <div class="three__title">Valuable business insights</div>
-            <div class="three__text">Collect processed & cleansed data that is ready to be analyzed to
-              gather valuable business insights.</div>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center wow flipInY"
-          data-wow-offset="200">
-          <div class="why__three three">
-            <img src="img/mail.png" alt="">
-            <div class="three__title">Powerful Algorithms</div>
-            <div class="three__text">With the help of powerful algorithms, quality rules & techniques,
-              obtain simplified & enriched data.</div>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 d-md-flex align-items-md-center justify-content-md-center d-flex align-items-center justify-content-center wow flipInX"
-          data-wow-offset="200">
-          <div class="why__three three">
-            <img src="img/timeline.png" alt="">
-            <div class="three__title">Data in real-time</div>
-            <div class="three__text">Collect data in real-time from multiple channels and move it into a
-              data lake, in its original format.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="circle">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4  col-md-6 mb-5">
-          <div class="circle__circles wow flipInY" data-wow-offset="300">
-            <img class=" ms-3 " src="img/Logos.png" alt="">
-          </div>
-        </div>
-        <div class=" col-lg-6 offset-lg-1 offset-0 col-12 circle__block wow flipInX" data-wow-offset="200">
-          <div class="notif">For Product Teams</div>
-          <div class="circle__title">Launch with the best stack</div>
-          <div class="circle__descr">A centralized platform that integrates zillions of data sources using Big
-            Data ELT (Extract, Load & Transform) that leaves no data behind</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="engineer wow flipInX" data-wow-offset="200">
-    <div class="container">
-      <div class="row flex-row-reverse align-items-center">
-        <div class="col-lg-6 col-md-7">
-          <img src="img/engineer.png" class="movingImg" alt="">
-        </div>
-        <div class=" col-lg-5 col-md-5 col-sm-9 col offset-lg-1 offset-md-0 engineer__block">
-          <div class="notif">For Engineering Teams</div>
-          <div class="engineer__title">Data-driven pipelines in minutes</div>
-          <div class="engineer__descr">Maintenance-free data pipelines with quick set-up and straight-forward
-            deployments that are powered by a modern & scalable platform. </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg2" style="background-image:url(img/bg2.png);">
-    <section class="reviews">
+    <section class="circle">
       <div class="container">
         <div class="row">
-          <div class="col offset-lg-1">
-            <div class="reviews__text">"What I love about Qubly is the easy way we
-              can collaborate even if
-              there
-              is
-              a
-              lot of people involved in the process"</div>
-            <img src="img/Profile.png" alt="" class="reviews__img">
-            <div class="reviews__name ">Guillaume Cabane
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="circle__circles wow flipInY" data-wow-offset="300">
+              <img class="ms-3" src="img/Logos.png" alt="" />
             </div>
-            <div class="reviews__work">CTO @ BigSpring</div>
-            <hr>
-            <div class="reviews__companies">
-              <div class="reviews__company company">
-                <div class="company__name"><img src="img/1_rew.svg" alt="">
-                </div>
-              </div>
-              <div class="reviews__company company">
-                <div class="company__name active">
-                  <img src="img/2rew.svg" alt="">
-                </div>
-              </div>
-              <div class="reviews__company company">
-                <div class="company__name"><img src="img/3rew.svg" alt=""></div>
-              </div>
-              <div class="reviews__company company">
-                <div class="company__name"><img src="img/4rew.svg" alt=""></div>
-              </div>
-              <div class="reviews__company company">
-                <div class="company__name"><img src="img/5rew.svg" alt=""></div>
-              </div>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 offset-0 col-12 circle__block wow flipInX"
+            data-wow-offset="200"
+          >
+            <div class="notif">For Product Teams</div>
+            <div class="circle__title">Launch with the best stack</div>
+            <div class="circle__descr">
+              A centralized platform that integrates zillions of data sources
+              using Big Data ELT (Extract, Load & Transform) that leaves no data
+              behind
             </div>
           </div>
         </div>
       </div>
-
-
-
     </section>
-  </section>
-  <section class="signup">
-    <div class="container">
-      <div class="row d-sm-flex align-items-sm-center">
-        <div class="col-lg-6 wow zoomIn" data-wow-offset="300">
-          <div class="signup__title">See why the world’s best companies use Qubly to become truly data-driven.
+    <section class="engineer wow flipInX" data-wow-offset="200">
+      <div class="container">
+        <div class="row flex-row-reverse align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <img src="img/engineer.png" class="movingImg" alt="" />
           </div>
-          <div class="signup__trusted">Trusted by</div>
-          <div class="signup__logos">
-            <div class="row text-center align-content-around">
-              <div class="col-lg-6 col-sm-6 col-6">
-                <img src="img/builder-io.svg" alt="">
-              </div>
-              <div class="col-lg-6 col-sm-6 col-6">
-                <img src="img/react.svg" alt="">
-              </div>
-              <div class="col-lg-6 mt-5 col-sm-6 col-6">
-                <img src="img/airbnb.svg" alt="">
-              </div>
-              <div class="col-lg-6  mt-5 col-sm-6 col-6"><img src="img/skylight.svg" alt=""></div>
+          <div
+            class="col-lg-5 col-md-5 col-sm-9 col offset-lg-1 offset-md-0 engineer__block"
+          >
+            <div class="notif">For Engineering Teams</div>
+            <div class="engineer__title">Data-driven pipelines in minutes</div>
+            <div class="engineer__descr">
+              Maintenance-free data pipelines with quick set-up and
+              straight-forward deployments that are powered by a modern &
+              scalable platform.
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 d-flex mt-5 col-sm-12 align-items-sm-center justify-content-sm-center wow zoomIn"
-          data-wow-offset="300">
-
-          <form action="#" id="signup" class="signup__form form">
-            <div class="signup__background"></div>
-            <h2 class="form__title">Sign Up</h2>
-            <button class="form__button">Start your free trial</button>
-            <input class="form__element" type="text" placeholder="Your primary email">
-            <input class="form__element" type="password" placeholder="Password">
-            <input class="form__element" type="password" placeholder="Re-type password">
-            <h2 class="form__divider">OR</h2>
-            <button class="form__google">
-              <img src="img/google .png" alt="">
-            </button>
-            <hr>
-            <div class="form__login">
-              Already have an account? <a href="">Login</a>
-            </div>
-          </form>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer wow slideInUp" data-wow-offset="300">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-10">
-          <div class="footer__info info">
-            <img src="img/Logo.svg" alt="" class="info__logo">
-            <div class="info__text mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ullam alias
-              fugiat
-              saepe nisi magnam non suscipit distinctio veniam mollitia, similique consequuntur odio facere, beatae,
-              laudantium aut dolorem quidem doloremque!</div>
-            <div class="info__socials d-flex justify-content-sm-center ">
-              <div class="info__social ">
-                <a href=""> <img src="img/favicon/facebook-icon.png" alt=""></a>
-
+    </section>
+    <section class="bg2" style="background-image: url(img/bg2.png)">
+      <section class="reviews">
+        <div class="container">
+          <div class="row">
+            <div class="col offset-lg-1">
+              <div class="reviews__text">
+                "What I love about Qubly is the easy way we can collaborate even
+                if there is a lot of people involved in the process"
               </div>
-              <div class="info__social ms-2">
-                <a href=""> <img src="img/favicon/twitter-3.png" alt="">
-                </a>
-              </div>
-              <div class="info__social ms-2">
-                <a href=""><img src="img/favicon/instagram-2016.png" alt=""></a>
-
+              <img src="img/Profile.png" alt="" class="reviews__img" />
+              <div class="reviews__name">Guillaume Cabane</div>
+              <div class="reviews__work">CTO @ BigSpring</div>
+              <hr />
+              <div class="reviews__companies">
+                <div class="reviews__company company">
+                  <div class="company__name">
+                    <img src="img/1_rew.svg" alt="" />
+                  </div>
+                </div>
+                <div class="reviews__company company">
+                  <div class="company__name active">
+                    <img src="img/2rew.svg" alt="" />
+                  </div>
+                </div>
+                <div class="reviews__company company">
+                  <div class="company__name">
+                    <img src="img/3rew.svg" alt="" />
+                  </div>
+                </div>
+                <div class="reviews__company company">
+                  <div class="company__name">
+                    <img src="img/4rew.svg" alt="" />
+                  </div>
+                </div>
+                <div class="reviews__company company">
+                  <div class="company__name">
+                    <img src="img/5rew.svg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-sm-12  d-flex justify-content-around">
-          <ul class="footer__product product">
-            <h2 class="footer__title">Product</h2>
-            <a href="">
-              <li>Connections</li>
-            </a>
-            <a href="">
-              <li> Protocols</li>
-            </a>
-            <a href="">
-              <li> Personas</li>
-            </a>
-            <a href="">
-              <li>Integrations</li>
-            </a>
-            <a href="">
-              <li> Catalog</li>
-            </a>
-            <a href="">
-              <li> Pricing</li>
-            </a>
-            <a href="">
-              <li> Security</li>
-            </a>
-            <a href="">
-              <li>GDPR</li>
-            </a>
-          </ul>
-          <div class="footer__wrapper">
-            <h2 class="footer__title">For Developers</h2>
-            <ul class="footer__developers">
-              <a href="">
-                <li>Docs</li>
-              </a><a href="">
-                <li>API</li>
-              </a><a href="">
-                <li>Open Source</li>
-              </a><a href="">
-                <li>Engineering Team</li>
-              </a>
-            </ul>
+      </section>
+    </section>
+    <section class="signup">
+      <div class="container">
+        <div class="row d-sm-flex align-items-sm-center">
+          <div class="col-lg-6 wow zoomIn" data-wow-offset="300">
+            <div class="signup__title">
+              See why the world’s best companies use Qubly to become truly
+              data-driven.
+            </div>
+            <div class="signup__trusted">Trusted by</div>
+            <div class="signup__logos">
+              <div class="row text-center align-content-around">
+                <div class="col-lg-6 col-sm-6 col-6">
+                  <img src="img/builder-io.svg" alt="" />
+                </div>
+                <div class="col-lg-6 col-sm-6 col-6">
+                  <img src="img/react.svg" alt="" />
+                </div>
+                <div class="col-lg-6 mt-5 col-sm-6 col-6">
+                  <img src="img/airbnb.svg" alt="" />
+                </div>
+                <div class="col-lg-6 mt-5 col-sm-6 col-6">
+                  <img src="img/skylight.svg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="footer__wrapper">
-            <h2 class="footer__title">Company</h2>
-            <ul class="footer__company">
-              <a href="">
-                <li>Careers</li>
-              </a>
-              <a href="">
-                <li>Blog</li>
-              </a>
-              <a href="">
-                <li>Press</li>
-              </a>
-            </ul>
+          <div
+            class="col-lg-6 d-flex mt-5 col-sm-12 align-items-sm-center justify-content-sm-center wow zoomIn"
+            data-wow-offset="300"
+          >
+            <form action="#" id="signup" class="signup__form form">
+              <div class="signup__background"></div>
+              <h2 class="form__title">Sign Up</h2>
+              <button class="form__button">Start your free trial</button>
+              <input
+                class="form__element"
+                type="text"
+                placeholder="Your primary email"
+              />
+              <input
+                class="form__element"
+                type="password"
+                placeholder="Password"
+              />
+              <input
+                class="form__element"
+                type="password"
+                placeholder="Re-type password"
+              />
+              <h2 class="form__divider">OR</h2>
+              <button class="form__google">
+                <img src="img/google .png" alt="" />
+              </button>
+              <hr />
+              <div class="form__login">
+                Already have an account? <a href="">Login</a>
+              </div>
+            </form>
           </div>
-          <div class="footer__wrapper">
-            <h2 class="footer__title">Support</h2>
-            <ul class="footer__support">
+        </div>
+      </div>
+    </section>
+    <footer class="footer wow slideInUp" data-wow-offset="300">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-10">
+            <div class="footer__info info">
+              <img src="img/Logo.svg" alt="" class="info__logo" />
+              <div class="info__text mt-4 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                ullam alias fugiat saepe nisi magnam non suscipit distinctio
+                veniam mollitia, similique consequuntur odio facere, beatae,
+                laudantium aut dolorem quidem doloremque!
+              </div>
+              <div class="info__socials d-flex justify-content-sm-center">
+                <div class="info__social">
+                  <a href="">
+                    <img src="img/favicon/facebook-icon.png" alt=""
+                  /></a>
+                </div>
+                <div class="info__social ms-2">
+                  <a href="">
+                    <img src="img/favicon/twitter-3.png" alt="" />
+                  </a>
+                </div>
+                <div class="info__social ms-2">
+                  <a href=""
+                    ><img src="img/favicon/instagram-2016.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-sm-12 d-flex justify-content-around">
+            <ul class="footer__product product">
+              <h2 class="footer__title">Product</h2>
               <a href="">
-                <li> Help Center</li>
+                <li>Connections</li>
               </a>
               <a href="">
-                <li>Contact Us</li>
+                <li>Protocols</li>
+              </a>
+              <a href="">
+                <li>Personas</li>
+              </a>
+              <a href="">
+                <li>Integrations</li>
+              </a>
+              <a href="">
+                <li>Catalog</li>
+              </a>
+              <a href="">
+                <li>Pricing</li>
               </a>
               <a href="">
                 <li>Security</li>
               </a>
               <a href="">
-                <li>Bulletins</li>
-              </a>
-              <a href="">
-                <li>Documentation</li>
-              </a>
-              <a href="">
-                <li>Partner</li>
-              </a>
-              <a href="">
-                <li>Portal</li>
+                <li>GDPR</li>
               </a>
             </ul>
+            <div class="footer__wrapper">
+              <h2 class="footer__title">For Developers</h2>
+              <ul class="footer__developers">
+                <a href=""> <li>Docs</li> </a
+                ><a href=""> <li>API</li> </a
+                ><a href=""> <li>Open Source</li> </a
+                ><a href="">
+                  <li>Engineering Team</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer__wrapper">
+              <h2 class="footer__title">Company</h2>
+              <ul class="footer__company">
+                <a href="">
+                  <li>Careers</li>
+                </a>
+                <a href="">
+                  <li>Blog</li>
+                </a>
+                <a href="">
+                  <li>Press</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer__wrapper">
+              <h2 class="footer__title">Support</h2>
+              <ul class="footer__support">
+                <a href="">
+                  <li>Help Center</li>
+                </a>
+                <a href="">
+                  <li>Contact Us</li>
+                </a>
+                <a href="">
+                  <li>Security</li>
+                </a>
+                <a href="">
+                  <li>Bulletins</li>
+                </a>
+                <a href="">
+                  <li>Documentation</li>
+                </a>
+                <a href="">
+                  <li>Partner</li>
+                </a>
+                <a href="">
+                  <li>Portal</li>
+                </a>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class=" col-lg-2 col-sm-3 col-7  footer__news footer__wrapper">
-          <div class="footer__title">Newsletter</div>
-          <div class="footer__newsletter">
-            <input type="text" placeholder="Email">
-            <button type="submit"><img src="img/favicon/arrow__newsletter.png" alt=""></button>
+          <div class="col-lg-2 col-sm-3 col-7 footer__news footer__wrapper">
+            <div class="footer__title">Newsletter</div>
+            <div class="footer__newsletter">
+              <input type="text" placeholder="Email" />
+              <button type="submit">
+                <img src="img/favicon/arrow__newsletter.png" alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- libs -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic">
+    <!-- libs -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic"
+    />
 
+    <link rel="stylesheet" href="libs/animate.css" />
 
-  <link rel="stylesheet" href="libs/animate.css">
+    <script src="libs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
-  <script src="libs/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-
-  <script src="js/common.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/slide.js"></script>
-  <link rel="stylesheet" href="css/main.min.css">
-  <link rel="stylesheet" href="css/adaptive.min.css">
-</body>
-
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/adaptive.min.css" />
+  </body>
 </html>
